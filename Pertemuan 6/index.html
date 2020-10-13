@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            text-indent: -999em;
+            background-color: #4661b0;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+            border:25px solid #4661b0;
+            border-radius: 32px;
+            border-bottom: 0;
+        }
+        .box::before{
+            content: "/20";
+            position: absolute;
+            background: #4661b0;
+            width: 80px;
+            height: 160px;
+            bottom: -40px;
+            right: -37px;
+            border: 35px solid white;
+            border-radius: 25px;
+        }
+        .box::after{
+            content: "/20";
+            position: absolute;
+            width: 100px;
+            top:100px;
+            height: 25px;
+            background: white;
+            right: 10px;
+        }
+        .pacman{
+            background: rgb(169, 169, 27);
+            text-indent: -999em;
+            margin-top: 50px;
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            border-radius: 100%;
+            position: relative;
+        }
+        .pacman::before {
+            content: "/20";
+            position: absolute;
+            width: 6200px;
+            height: 200px;
+            
+            background:white ;
+            left: 20px;
+            border-radius: 100%;
+            border:10px solid white;
+        }
+        .pacman::after {
+            content: "/20";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: white;
+            right:60px;
+            top:30px;
+        }
+        .segitiga {
+            text-indent: -999em;
+            height: 0;
+            margin-left: 50px;
+            width: 0;
+            border-right: 100px solid transparent;
+            border-left: 100px solid transparent;
+            border-top: 100px solid #464646;
+            border-bottom: 100px solid #464646 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        facebook
+    </div>
+    <div class="pacman">
+        pacman
+    </div>
+    <div class="segitiga">
+        segitiga
+    </div>
+</body>
+</html>
